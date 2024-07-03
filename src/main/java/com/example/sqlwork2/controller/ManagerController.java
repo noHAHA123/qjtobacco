@@ -39,7 +39,7 @@ public class ManagerController {
      */
     @RequestMapping(value = "/getItemById",method = RequestMethod.POST,produces = "application/json;charset=UTF-8")
    // @ResponseBody
-    public JSONObject getItemById(@RequestBody int id){
+    public JSONObject getItemById(int id){
         JSONObject outputdata = new JSONObject();
         System.out.println("  查询物品 ");
         log.info("  查询物品信息开始 ");
